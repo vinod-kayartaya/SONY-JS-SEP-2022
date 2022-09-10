@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Customer list</h1>
+        <ul id="clist"></ul>
+
+        <script>
+            fetch('http://localhost:1234/api/customers')
+                .then((resp) => resp.json())
+                .then((customers) =>
+                    customers.map(
+                        (c) => `<li>${c.firstname} ${c.lastname}</li>`
+                    )
+                )
+                .then((items) => {
+                    document.getElementById('clist').innerHTML = items.join('');
+                });
+        </script>
+    </body>
+</html>

@@ -11,6 +11,9 @@ Person.prototype.fullname = function () {
     return this.firstname + ' ' + this.lastname;
 };
 
+let p1 = new Person();
+console.log(p1);
+
 // constructor Employee
 function Employee(id, firstname, lastname, city, email, salary) {
     Person.call(this, firstname, lastname, city);
