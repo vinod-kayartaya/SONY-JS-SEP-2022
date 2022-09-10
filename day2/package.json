@@ -1,0 +1,22 @@
+{
+  "name": "day2",
+  "version": "1.0.0",
+  "description": "Day2 code learning Node.js stuffs",
+  "main": "ex15.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinod-kayartaya/SONY-JS-SEP-2022.git"
+  },
+  "author": "Vinod Kumar Kayartaya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinod-kayartaya/SONY-JS-SEP-2022/issues"
+  },
+  "homepage": "https://github.com/vinod-kayartaya/SONY-JS-SEP-2022#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
