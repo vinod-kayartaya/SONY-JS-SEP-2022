@@ -1,0 +1,14 @@
+{
+  "customers": [
+    {
+      "name": "Vinod",
+      "city": "Bangalore",
+      "id": 1
+    },
+    {
+      "name": "Kumar",
+      "city": "Bangalore",
+      "id": 2
+    }
+  ]
+}
