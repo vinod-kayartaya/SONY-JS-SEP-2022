@@ -18,3 +18,22 @@ let maleNames = people
     .map((p) => p.firstname);
 
 console.log(maleNames);
+
+// search for the index or the actual object with email='vyakobovitzc@blogs.com'
+let index = people.findIndex((p) => p.email === 'vyakobovitzc@blogs.com');
+if (index === -1) {
+    console.log('No person found with email: vyakobovitzc@blogs.com');
+} else {
+    console.log(
+        'A person with email=vyakobovitzc@blogs.com was found at index',
+        index
+    );
+}
+
+let p1 = people.find((p) => p.email === 'vyakobovitzc@blogs.com');
+
+if (!p1) {
+    console.log('No person found with email: vyakobovitzc@blogs.com');
+} else {
+    console.log(p1);
+}
